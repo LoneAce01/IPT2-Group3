@@ -1,88 +1,39 @@
-.topnav{
-    position: absolute;
-    width: 100%;
-    height: 10%;
-    left: 0px;
-    top: 0px;
-    background: #A6E4E7;
-    }
-    .home{
-    position: relative;
-    width: 200px;
-    height: 5px;
-    left: 5%;
-    top: 7px;
-    
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 50px;
-    line-height: 6px;
-    
-    color: #000000;
-    }
-    .recipe{
-    position: absolute;
-    width: 27px;
-    height: 5px;
-    left: 17%;
-    top: 7px;
-    
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 50px;
-    line-height: 6px;
-    
-    color: #000000;
-    
-    }
-    .foodhub{
-    position: absolute;
-    width: 48px;
-    height: 10px;
-    left: 44%;
-    top: 4px;
-    
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 50px;
-    line-height: 12px;
-    
-    color: #000000;
-    
-    }
-    .feedback{
-    position: absolute;
-    width: 27px;
-    height: 5px;
-    left: 70%;
-    top: 7px;
-    
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 50px;
-    line-height: 6px;
-    
-    color: #000000;
-    }
-    .about{
-    position: absolute;
-    width: 20px;
-    height: 5px;
-    left: 85%;
-    top: 7px;
-    
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 50px;
-    line-height: 6px;
-    
-    color: #000000;
-    }
+body{
+  background-color: rgb(189, 205, 214);
+}
+
+/**TOP NAV CSS */
+nav{
+  width: 100%;
+  height: 80px;
+  background-color: rgb(96, 150, 180);
+}
+
+.title{
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color:rgb(238, 233, 218)
+}
+
+nav ul{
+  float: right;
+  margin-right: 30px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  font-size: 17px;
+  color: rgb(238, 233, 218);
+  text-transform: uppercase;
+  margin: 0 5px;
+}
+
+/**END OF TOP NAV CSS */
+
+
     
     @keyframes cf3FadeInOut {
       0% {
@@ -132,3 +83,104 @@
         border-image-width: 1000px;
         
     }
+
+
+/**FOOTER*/
+
+#break{
+  color: black;
+  height: 1px;
+  width: 100%;
+
+}
+
+.footer_container{
+  position: relative;
+  width: 100%;
+  height: 1px;
+  top: 250px;
+
+
+}
+
+.footer_list{
+  position: absolute;
+}
+
+.footer_title{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color:black;
+
+  position: absolute;
+  top: 5px;
+  left: 40px;
+
+}
+
+.footer_text{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding: 0px 5px 5px 30px;
+  color:black;
+
+  position: absolute;
+  top: 5px;
+  left: 70px;
+  padding: 15px 15px 15px 15px;
+}
+
+#about{
+  padding-bottom: 5px;
+  font-weight: 500;
+}
+#blog{
+  padding-bottom: 5px;
+  font-weight: 500;
+}
+#recipes{
+  padding-bottom: 5px;
+  font-weight: 500;
+}
+#contact{
+  font-weight: 500;
+}
+
+#c{
+  position: absolute;
+  left: 79%;
+  margin-top: 100px;
+
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#fb{
+  position: absolute;
+  margin-top: 10px;
+  left: 80%;
+  height: 50px;
+  width: 50px;
+}
+#instagram{
+  position: absolute;
+  margin-top: 10px;
+  left: 84%;
+  height: 50px;
+  width: 50px;
+}
+#pinterest{
+  position: absolute;
+  margin-top: 10px;
+  left: 88%;
+  height: 50px;
+  width: 50px;
+}
+#twitter{
+  position: absolute;
+  margin-top: 10px;
+  left: 92%;
+  height: 50px;
+  width: 50px;
+}
+    
+/**END OF FOOTER*/
