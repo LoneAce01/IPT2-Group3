@@ -1,12 +1,14 @@
 body{
-  background-color: rgb(189, 205, 214);
+  background-color: white;
 }
 
 /**TOP NAV CSS */
 nav{
   width: 100%;
   height: 80px;
-  background-color: rgb(96, 150, 180);
+  display: block;
+  border-radius: 1px;
+  background-color: #24252A;
 }
 
 .title{
@@ -15,20 +17,39 @@ nav{
   padding: 0 100px;
   font-weight: bold;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  color:rgb(238, 233, 218)
+  color:#edf0f1;
+  cursor: pointer;
 }
 
 nav ul{
   float: right;
-  margin-right: 30px;
+  color:#edf0f1;
+
 }
 nav ul li{
   display: inline-block;
-  line-height: 80px;
+  line-height: 50px;
   font-size: 17px;
-  color: rgb(238, 233, 218);
+  font-weight: 600;
   text-transform: uppercase;
-  margin: 0 5px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin-right: 100px;
+  cursor: pointer;
+}
+
+li:hover{
+  text-decoration: underline #24252A;
+  background-color: #edf0f1;
+  color: #24252A;
+}
+
+#navbreak{
+  display: block;
+  position: absolute;
+  width: 100%;
+  top: 80px; 
+  
+
 }
 
 /**END OF TOP NAV CSS */
@@ -70,18 +91,44 @@ nav ul li{
     opacity:0;
     }
     .mainImage{
-        width: 1000px;
-        height: 310px;
+        width: 100%;
+        height: 850px;
         position: absolute;
         transform: translate(-50%,-50%);
-        top: 30%;
+        top: 515px;
         left: 50%;
         overflow:hidden;
-        border: 10px solid #ffffff;
-        border-radius: 8px;
-        box-shadow: -1px 5px 15px black;
+        border: 1px solid #ffffff;
+        border-radius: 1px;
+        box-shadow: -1px 5px 10px black;
         border-image-width: 1000px;
         
+    }
+
+    .tag_container{
+      width: 700px;
+      height: 150px;
+      position: relative;
+      opacity: 0.9;
+
+      display: block;
+      top: 300px;
+    
+      
+    }
+    .tagline{
+      width: 700px;
+      height: 150px;
+      position: absolute;
+      display: block;
+      
+      
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-weight: 600;
+      font-size: 50px;
+      color: #edf0f1;
+      background-color: #24252A;
+      
     }
 
 
@@ -97,8 +144,10 @@ nav ul li{
 .footer_container{
   position: relative;
   width: 100%;
-  height: 1px;
-  top: 250px;
+  height: 180px;
+  top: 1500px;
+  background-color: #edf0f1;
+  
 
 
 }
@@ -122,7 +171,7 @@ nav ul li{
 .footer_text{
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   padding: 0px 5px 5px 30px;
-  color:black;
+  color:#24252A;
 
   position: absolute;
   top: 5px;
@@ -184,3 +233,4 @@ nav ul li{
 }
     
 /**END OF FOOTER*/
+
