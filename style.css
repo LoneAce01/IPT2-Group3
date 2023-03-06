@@ -1,383 +1,341 @@
-body{
-  background-color: white;
+body, html{
+    height: 100%;
+    width:100%;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+
+    letter-spacing: 1px;
 }
 
-/**TOP NAV CSS */
-nav{
-  width: 100%;
-  height: 80px;
-  display: block;
-  border-radius: 1px;
-  background-color: #24252A;
-}
-
-.navtitle{
-  font-size: 35px;
-  line-height: 80px;
-  padding: 0 100px;
-  font-weight: bold;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  color: #edf0f1;
-  cursor: pointer;
-}
-
-nav ul{
-  float: right;
-  color:#edf0f1;
-
-}
-nav ul li{
-  display: inline-block;
-  line-height: 50px;
-  font-size: 17px;
-  font-weight: 600;
-  text-transform: uppercase;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  margin-right: 100px;
-  cursor: pointer;
-}
-
-li:hover{
-  text-decoration: underline #24252A;
-  background-color: #edf0f1;
-  color: #24252A;
-}
-
-#navbreak{
-  display: block;
-  position: absolute;
-  width: 100%;
-  top: 80px; 
-  
-
-}
-
-/**END OF TOP NAV CSS */
-
-
- 
-/** MAIN IMAGE AND TAGLINE*/
-
-    @keyframes cf3FadeInOut {
-      0% {
-      opacity:1;
-    }
-    45% {
-    opacity:1;
-    }
-    55% {
-    opacity:0;
-    }
-    100% {
-    opacity:0;
-    }
-    }
+.nav{
+    align-items: center;
+    overflow: hidden;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    font-family:Georgia, 'Times New Roman', Times, serif;
     
-    #cf3 img.one {
-    animation-name: cf3FadeInOut;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    animation-duration: 10s;
-    animation-direction: alternate;
-    }
+}
+
+.nav li{
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    letter-spacing: 2px;
+    text-decoration: none;
+    font-size: 24px;
+    margin-bottom: 10px;
+    margin-right: 10px ;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+.nav li.left{
+    float: right;
+    color: black;
+   
+}
+
+.nav li.left:hover{
+    background-color: salmon;
+    color: black;
+    padding-bottom: 5px;
     
-    #cf3 img{
-        position:absolute;
-      left:0;
-      -webkit-transition: opacity 1s ease-in-out;
-      -moz-transition: opacity 1s ease-in-out;
-      -o-transition: opacity 1s ease-in-out;
-      transition: opacity 1s ease-in-out;
-    }
-    #cf3 img.transparent {
-    opacity:0;
-    }
-    .mainImage{
-        width: 100%;
-        height: 850px;
-        position: absolute;
-        transform: translate(-50%,-50%);
-        top: 515px;
-        left: 50%;
-        overflow:hidden;
-        border: 1px solid #ffffff;
-        border-radius: 1px;
-        box-shadow: -1px 5px 10px black;
-        border-image-width: 1000px;
-        
-    }
+}
 
-    .tag_container{
-      width: 700px;
-      height: 150px;
-      position: relative;
-      opacity: 0.9;
+.nav li.NamePage{
+    font-weight: bold;
+    font-size: 30px;
+    padding-bottom: 10px;
+}
 
-      display: block;
-      top: 300px;
-    
-      
-    }
-    .tagline{
-      width: 700px;
-      height: 150px;
-      position: absolute;
-      display: block;
-      
-      
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-      font-weight: 600;
-      font-size: 50px;
-      color: #edf0f1;
-      background-color: #24252A;
-      
-    }
-/** MAIN IMAGE AND TAGLINE*/
+  /** MAIN_IMAGE animation part AND TAGLINE */
+  .tagline{
+    font-size: 30px;
+    position: absolute;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: fit-content;
+    margin-top: 15%;
+    margin-left: 22%;
+    opacity: 0.8;
+    text-shadow: 2px 2px peru;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   }
 
+   .mainImage {
+       width: 100%;
+       height: 650px;
+       position: relative;
+
+     }
+   
+   .mainImage img {
+       position: absolute;
+       width: 100%;
+       height: 650px;
+     }
+   
+     .top {
+       animation-name: fade;
+       animation-timing-function: ease-in-out;
+       animation-iteration-count: infinite;
+       animation-duration: 5s;
+       animation-direction: alternate;
+     }
+     
+     @keyframes fade {
+       0% {
+         opacity: 1;
+       }
+       25% {
+         opacity: 1;
+       }
+       75% {
+         opacity: 0;
+       }
+       100% {
+         opacity: 0;
+       }
+     }
+
+ /** MAIN_IMAGE animation part AND TAGLINE */
 
 /** FOOD PART*/
 
 .FoodCatPart-Row{
-  height: 400px;
-  width: 100%;
-  background-color: #24252A;
-  padding: 20px;
-  contain: content;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  position: relative;
-  top: 836px;
-  border: 1px solid white;
+    background-color: salmon;
+    padding: 35px;
+    contain: content;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid white;
 
+  }
   
-  
-  
-}
-
 .caption{
-  text-align: center;
-  text-decoration: none;
-  position: absolute;
-  color: #edf0f1;
-  margin-left: 100px;
-}
-
-.caption::before{
-content: '';
-background-color: #24252A;
-position: absolute;
-left: 0;
-bottom: 3px;
-width: 100%;
-height: 8px;
-z-index: -1;
-transition: all .3s ease-in-out;
-}
-
-.caption:hover::before {
-  bottom: 0;
-  height: 100%;
-}
-
-.image{
-  width: 250px;
-  height: 350px;
-}
-
-.bahay{
-  contain: content;
-}
-
-.title{
-  color: black;
-}
-.category{
-  background-color: #24252A;
-}
-
-.name{
-	font-size: 20px;
-	text-transform: uppercase;
-	transition: 700ms ease;
-	font-variation-settings: "wght" 311;
-	margin-bottom: 0.8rem;
-	outline: none;
-	text-align: center;
-}
-.name:hover {
-	font-variation-settings: "wght" 582; 
-	letter-spacing: 2px;
-	color: salmon;
-	text-decoration: underline;
-  }
-
-  .def{
-    font-size: 20px;
     text-align: center;
+    text-decoration: none;
+    position: absolute;
+    color: black;
+    margin-left: 100px;
+  }
+  
+  .caption::before{
+  content: '';
+  background-color:darksalmon;
+  position: absolute;
+  left: 0;
+  bottom: 3px;
+  width: 100%;
+  height: 8px;
+  z-index: -1;
+  transition: all .3s ease-in-out;
+  }
+  
+  .caption:hover::before {
+    bottom: 0;
+    height: 100%;
+  }
+  
+  .image{
+    width: 250px;
+    height: 350px;
+  }
+  
+  .title{
+    font-size: 25px;
+    color: black;
+    background-color: salmon;
+    text-align: center;
+    padding: 3px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
   }
 
-/** FOOD PART*/
+  .bahay{
+    contain: content;
+  }
+  
+  
+  .name{
+      font-size: 20px;
+      text-transform: uppercase;
+      transition: 700ms ease;
+      font-variation-settings: "wght" 311;
+      margin-bottom: 0.8rem;
+      outline: none;
+      text-align: center;
+  }
+  .name:hover {
+      font-variation-settings: "wght" 582; 
+      letter-spacing: 2px;
+      color: salmon;
+      text-decoration: underline;
+    }
+  
+    .def{
+      font-size: 20px;
+      text-align: center;
+    }
+  
+  /** FOOD PART*/
 
 /**FOOTER*/
 
 #break{
-  color: black;
-  height: 1px;
-  width: 100%;
-
-}
-
-.footer_container{
-  position: relative;
-  width: 100%;
-  height: 150px;
-  top: 1500px;
-  background-color: #edf0f1;
+    color: black;
+    height: 1px;
+    width: 100%;
+  }
   
-}
+  .footer_container{
+    position: relative;
 
-.footer_list{
-  position: absolute;
-  width: 100%;
+  }
   
-}
-
-.footer_title{
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-weight: 600;
-  font-size: 20px;
-  color:black;
-
-  position: absolute;
-  top: 2px;
-  left: 500px;
-}
-
-.footer_text{
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  padding: 0px 5px 5px 30px;
-  color:#24252A;
-  list-style-type: none;
-
-  position: absolute;
-  top: 2px;
-  left: 400px;
-  padding: 15px 15px 15px 15px;
-}
-
-.footerli{
-  padding-bottom: 5px;
-  font-weight: 600;
-}
- 
-.footer_title2{
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-weight: 600;
-  font-size: 20px;
-  color:black;
-
-  position: absolute;
-  top: 2px;
-  left: 950px;
-}
-
-.footer_text2{
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  padding: 0px 5px 5px 30px;
-  color:#24252A;
-  list-style-type: none;
-
-  position: absolute;
-  top: 2px;
-  left: 850px;
-  padding: 15px 15px 15px 15px;
-}
-
-.footer_title3{
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-weight: 600;
-  font-size: 20px;
-  color:black;
-
-  position: absolute;
-  top: 2px;
-  left: 1300px;
-}
-
-#fb{
-  position: absolute;
-  margin-top: 10px;
-  left: 64%;
-  height: 50px;
-  width: 50px;
-  top: 50px;
-}
-#instagram{
-  position: absolute;
-  margin-top: 10px;
-  left: 68%;
-  height: 50px;
-  width: 50px;
-  top: 50px;
-}
-#pinterest{
-  position: absolute;
-  margin-top: 10px;
-  left: 72%;
-  height: 50px;
-  width: 50px;
-  top: 50px;
-}
-#twitter{
-  position: absolute;
-  margin-top: 10px;
-  left: 76%;
-  height: 50px;
-  width: 50px;
-  top: 50px;
-}
-
-#c{
-  position: relative;
-  top: 1480px;
-  height: 25px;
-  width: 100%;
-  background-color: #24252A;
-  padding: 1px 1px 1px 1px;
-
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  color: #edf0f1;
-}
-
-.footer_title:hover{
-  color: #edf0f1;
-  background-color: #24252A;
-  text-decoration: underline;
-  cursor: pointer;
-}
-
-.footer_title2:hover{
-  color: #edf0f1;
-  background-color: #24252A;
-  text-decoration: underline;
-  cursor: pointer;
-}
-
-.footer_title3:hover{
-  color: #edf0f1;
-  background-color: #24252A;
-  text-decoration: underline;
-  cursor: pointer;
-}
-
-.footerli:hover{
-  color: #edf0f1;
-  background-color: #24252A;
-  text-decoration: underline;
-  cursor: pointer;
-}
-
+  .footer_list{
+    position: absolute;
+    width: 100%;
     
-/**END OF FOOTER*/
+  }
+  
+  .footer_title{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color:black;
+    position: absolute;
+    left: 20%;
+
+  }
+  
+  .footer_text{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0px 5px 5px 30px;
+    color:#24252A;
+    list-style-type: none;
+    position: absolute;
+    top: 2px;
+    left: 10%;
+    padding: 15px 15px 15px 15px;
+  }
+  
+.footerli{
+    padding-bottom: 5px;
+    font-weight: 600;
+  }
+   
+  .footer_title2{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color:black;
+    position: absolute;
+    top: 2px;
+    left: 50%;
+  }
+  
+  .footer_text2{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0px 5px 5px 30px;
+    color:#24252A;
+    list-style-type: none;
+    position: absolute;
+    top: 2px;
+    left: 40%;
+    padding: 15px 15px 15px 15px;
+  }
+  
+  .footer_title3{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color:black;
+    position: absolute;
+    top: 2px;
+    left: 75%;
+  }
+  
+  #fb{
+    position: absolute;
+    margin-top: 10px;
+    left: 71%;
+    height: 50px;
+    width: 50px;
+    top: 50px;
+  }
+  #instagram{
+    position: absolute;
+    margin-top: 10px;
+    left: 75%;
+    height: 50px;
+    width: 50px;
+    top: 50px;
+  }
+  #pinterest{
+    position: absolute;
+    margin-top: 10px;
+    left: 79%;
+    height: 50px;
+    width: 50px;
+    top: 50px;
+  }
+  #twitter{
+    position: absolute;
+    margin-top: 10px;
+    left: 83%;
+    height: 50px;
+    width: 50px;
+    top: 50px;
+  }
+  
+  #c{
+    position: relative;
+    top: 180px;
+    height: 25px;
+    width: 100%;
+    background-color: #24252A;
+    padding: 1px 1px 1px 1px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #edf0f1;
+  }
+  
+  .footer_title:hover{
+    color: #edf0f1;
+    background-color: #24252A;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  .footer_title2:hover{
+    color: #edf0f1;
+    background-color: #24252A;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  .footer_title3:hover{
+    color: #edf0f1;
+    background-color: #24252A;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  .footerli:hover{
+    color: #edf0f1;
+    background-color: #24252A;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+      
+  /**END OF FOOTER*/
+
 
