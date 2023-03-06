@@ -62,7 +62,7 @@ body, html{
     padding: 10px;
     width: fit-content;
     margin-top: 15%;
-    margin-left: 22%;
+    margin-left: 30%;
     opacity: 0.8;
     text-shadow: 2px 2px peru;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -120,11 +120,12 @@ body, html{
   }
   
 .caption{
-    text-align: center;
+   margin-top: 20%;
     text-decoration: none;
     position: absolute;
     color: black;
-    margin-left: 100px;
+    margin-left: 110px;
+    
   }
   
   .caption::before{
@@ -148,6 +149,21 @@ body, html{
     width: 250px;
     height: 350px;
   }
+  .imageMeal{
+    width: 250px;
+    height: 350px;
+    margin:20px;
+    padding: 3px;
+    float:left;
+	  -webkit-transition:  0.5s ease-out;
+    -moz-transition: 0.5s ease-out; 
+    -o-transition:  0.5s ease-out;
+  }
+
+  .imageMeal:hover{
+    cursor:pointer;
+    margin-top: 5px;
+  }
   
   .title{
     font-size: 25px;
@@ -161,6 +177,7 @@ body, html{
 
   .bahay{
     contain: content;
+    margin-top: 17%;
   }
   
   
@@ -186,7 +203,25 @@ body, html{
     }
   
   /** FOOD PART*/
+/** Food Pictures*/
+div.gallery {
+  margin: 18px;
+  float: left;
+  width: 150px;
+}
 
+
+div.gallery img {
+  width: 150px;
+  height: 120px;
+  border-radius: 100%;
+}
+
+div.desc {
+  padding: 5px;
+  text-align: center;
+}
+/** Food Pictures*/
 /**FOOTER*/
 
 #break{
